@@ -13,14 +13,14 @@ Blue="\[\033[0;34m\]"         # Blue
 BGreen="\[\033[1;32m\]"       # Green
 
 # High Intensty
-IBlack="\[\033[0;90m\]"       # Black
+IBlack="\[\033[0;37m\]"       # Black
 
 # Bold High Intensty
 Magenta="\[\033[1;95m\]"     # Purple
 
 # Various variables you might want for your PS1 prompt instead
-Time12a="\@"
-PathShort="\w"
+Time12a="\A"
+PathShort=" \u@\h: \w\a"
 
 # Default values for the appearance of the prompt. Configure at will.
 GIT_PROMPT_PREFIX="("
