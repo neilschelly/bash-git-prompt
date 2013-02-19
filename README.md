@@ -1,6 +1,6 @@
 # Informative git prompt for bash
 
-This prompt is a port of the "Informative git prompt for zsh" which you can find [here](https://github.com/olivierverdier/zsh-git-prompt)
+This prompt is a port of the "Informative git prompt for zsh" which you can find [here](https://github.com/magicmonty/zsh-git-prompt), which was a fork of [this one](https://github.com/olivierverdier/zsh-git-prompt)
 
 A ``bash`` prompt that displays information about the current git repository.
 In particular the branch name, difference with remote branch, number of files staged, changed, etc.
