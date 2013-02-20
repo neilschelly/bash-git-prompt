@@ -19,8 +19,8 @@ IBlack="\[\033[0;37m\]"       # Black
 Magenta="\[\033[1;95m\]"     # Purple
 
 # Various variables you might want for your PS1 prompt instead
-Time12a="\A"
-PathShort=" \u@\h: \w\a"
+Time24="\A"
+PathShort=" \u@\h: \w"
 
 # Default values for the appearance of the prompt. Configure at will.
 GIT_PROMPT_PREFIX="("
@@ -34,9 +34,8 @@ GIT_PROMPT_REMOTE=" "
 GIT_PROMPT_UNTRACKED="…"
 GIT_PROMPT_CLEAN="${BGreen}✔"
 
-PROMPT_START="$IBlack$Time12a$ResetColor$Yellow$PathShort$ResetColor"
-PROMPT_END=" % "
-
+PROMPT_START="$IBlack$Time24$ResetColor$Yellow$PathShort$ResetColor"
+PROMPT_END="\$ "
 
 function update_current_git_vars() {
     unset __CURRENT_GIT_STATUS
@@ -89,6 +88,7 @@ function setGitPrompt() {
 	else
 	  PS1="$PROMPT_START$PROMPT_END"
 	fi
+	
 }
 
 PROMPT_COMMAND=setGitPrompt
